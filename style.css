@@ -1,0 +1,58 @@
+:root{
+    --dark:rgb(43, 46, 74);
+    --red: rgb(232, 69, 69);
+    --maroon: rgb(144, 55, 73);
+    --purple: rgb(83, 53, 74);
+    --white: rgb(245,245,245)
+
+}
+
+@font-face{
+    font-family: Garamond;
+    src: url("./Assets/Garmond/EB_Garamond/EBGaramond-VariableFont_wght.ttf")
+}
+
+html, body{
+    margin:0%;
+    padding: 0%;
+    height: 100%;
+
+    background-color: var(--dark);
+    font-family: Garamond;
+}
+
+.navBtn{
+    display: none;
+}
+
+#navList{
+    display: none;
+}
+
+#bioDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1{
+font-size: 4rem;
+color: var(--red);
+text-align: center;
+border: 2px solid red;
+width: min-content;
+flex-basis: 10vw;
+}
+
+#profilePic{
+    width: 55vw;
+    height: 55vw;
+    border-radius: 35vw;
+    justify-self: flex-end;
+    /* display: none; */
+}
+
+#bioText{
+    /* display: none; */
+}
