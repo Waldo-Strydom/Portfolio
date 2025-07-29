@@ -44,6 +44,11 @@ border-bottom: 0.2vw solid var(--white);
 transform: rotate(2deg);
 box-shadow: 2vw 2vw 2vw var(--white);
 }
+.downLine{
+  border-bottom: 0.2vw solid var(--white);
+transform: rotate(-2deg);
+box-shadow: 2vw 2vw 2vw var(--white);  
+}
 
 h1{
 font-size: 2rem;
@@ -122,6 +127,27 @@ grid-template-rows: repeat(3,auto);
     font-family: "Garamond";
 }
 
-#cyfText{
-    
+#techImgesDiv{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5vw;
+
+}
+
+.techLogo{
+    width: 25vw;
+    height: 25vw;
+    /* border-radius: 15vw; */
+    margin: 2vw;
+
+}
+
+.eduItm, .otherItm{
+    color: var(--white);
+    max-width: 80vw;
+    text-align: center;
+    justify-self: center;
 }
