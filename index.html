@@ -10,26 +10,27 @@
     </head>
     <body>
         <button id="navOpenBtn" class="navBtn">&#10097;</button>
-        <button id="navCloseBtn" class="navBtn">&#10094;</button>
+        
         <nav>
-            <ul id="navList" >
-                <li id="bioListItem" class="navListItem">Bio</li>
-                <li id="techWorkListItem" class="navListItem">Tech work Experience</li>
-                <li id="techListItem" class="navListItem">Technologies</li>
-                <li id="projectsListItem" class="navListItem">Projects</li>
-                <li id="educationListItem" class="navListItem">Education</li>
-                <li id="otherWorkListItem" class="navListItem">Other Work Experience</li>
-                <li id="contactListItem" class="navListItem">Contact</li>
-            </ul> 
+            <div id="navList" class="" >
+                <button id="navCloseBtn" class="navBtn">&#10094;</button>
+                <p id="bioListItem" class="navListItem">Bio</p>
+                <p id="techWorkListItem" class="navListItem">Tech work Experience</p>
+                <p id="techListItem" class="navListItem">Technologies</p>
+                <p id="projectsListItem" class="navListItem">Projects</p>
+                <p id="educationListItem" class="navListItem">Education</p>
+                <p id="otherWorkListItem" class="navListItem">Other Work Experience</p>
+                <p id="contactListItem" class="navListItem">Contact</p>
+            </div> 
         </nav>
-        <div id="bioDiv">
+        <div id="bioDiv" class="navDivClass">
             <h1>Hi, I'm Waldo Strydom</h1>
             <img id="profilePic" src="./Assets/me.jpg" alt="Waldo's profile picture.">
             <p id="bioText">I'm a programmer and educator specialising in web development.</p>
 
         </div>
         <div class="upLine"></div>
-         <div id="techWorkDiv">
+         <div id="techWorkDiv" class="navDivClass">
             <h2 id="techH" class="divHead">Tech work Experience</h2>
         <div class="contentDiv">
                 <img id="cyfLogo" class="smallLogo" src="./Assets/cyf_brand.png" alt="CYF Logo">
@@ -42,7 +43,7 @@
         </div>
         <div class="downLine"></div>
        
-        <div id="technologiesDiv">
+        <div id="technologiesDiv" class="navDivClass">
             <h2 class="divHead">Technologies</h2>
             <div id="techImgesDiv">
                 <img class="techLogo" src="./Assets/Kotlin_Icon.svg.png" alt="Kotlin Image.">
@@ -56,13 +57,13 @@
 
          
 
-        <div id="projectsDiv">
+        <div id="projectsDiv" class="navDivClass">
             <h2 class="divHead">Projects</h2>
         </div>
 
         <div class="downLine"></div>
        
-        <div id="educationDiv">
+        <div id="educationDiv" class="navDivClass">
             <h2 class="divHead">Education</h2>
             <div class="eduItm">
                 <h3>Higher Certificate in Mobile Application and Web Development with Distinction</h3>
@@ -79,7 +80,7 @@
         </div>
         <div class="upLine"></div>
  
-        <div id="OtherworkDiv">
+        <div id="OtherworkDiv" class="navDivClass">
             <h2 class="divHead">Other Work Experience</h2>
             <div class="otherItm">
                 <h3>Online Sales Assistant</h3>
@@ -99,7 +100,8 @@
         </div>
         <div class="downLine"></div>
 
-        <div id="contactDiv">
+        <div id="contactDiv" class="navDivClass">
+            <h2 class="divHead">Contact Me</h2>
             <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdeHcSQNxh7jEO7p_XvAgpZmqYcFCJlB8m5PSc2L7_nrkKmyg/formResponse" method="POST">
                 <label for="name">Name: </label><br>
                   <input type="text" id="name" name="entry.675220070" class="contInput" required><br><br>

@@ -23,12 +23,91 @@ html, body{
     overflow-x: hidden;
 }
 
-.navBtn{
-    display: none;
+#navOpenBtn{
+background-color: var(--red);
+width: 20vw;
+height: 20vw;
+border-bottom-right-radius: 20vw;
+
+font-size: 1.2rem;
+
+z-index: 0;
 }
 
+#navOpenBtn:hover, #navOpenBtn:active, #navCloseBtn:hover, #navCloseBtn:active{
+    background-color: var(--white);
+    color: var(--red);
+}
+
+
 #navList{
-    display: none;
+    position: absolute;
+    top: 0;
+    left:-110%;
+    z-index: 10;
+    background-color: var(--white);
+    border: 2vw solid var(--red);
+    width: 99vw;
+    height: 100vh;
+    box-shadow: 1vw 1vw 1vw rgb(5,6,6);
+}
+
+.openNavDiv{
+    animation: openNav 2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.closeNavDiv{
+    animation: closeNav 2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes openNav{
+    from{
+        left:-110%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+@keyframes closeNav{
+    from{
+        left:0%;
+    }
+    to{
+        left: -110%;
+    }
+}
+
+#navCloseBtn{
+    display: block;
+    justify-self: end;
+
+background-color: var(--red);
+width: 20vw;
+height: 20vw;
+border-bottom-left-radius: 20vw;
+
+font-size: 1.2rem;
+
+}
+
+.navListItem{
+    
+    border-bottom: 1vw solid var(--red);
+    width: 99vw;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.navListItem:hover, .navListItem:active{
+    border-bottom: 1vw solid rgb(5,6,6);
+    color: var(--red);
 }
 
 #bioDiv{
