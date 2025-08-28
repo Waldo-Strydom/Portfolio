@@ -3,7 +3,8 @@
     --red: rgb(232, 69, 69);
     --maroon: rgb(144, 55, 73);
     --purple: rgb(83, 53, 74);
-    --white: rgb(245,245,245)
+    --white: rgb(245,245,245);
+    --black: rgb(5,6,6);
 
 }
 
@@ -49,7 +50,7 @@ z-index: 0;
     border: 2vw solid var(--red);
     width: 99vw;
     height: 100vh;
-    box-shadow: 1vw 1vw 1vw rgb(5,6,6);
+    box-shadow: 1vw 1vw 1vw var(--black);
 }
 
 .openNavDiv{
@@ -106,7 +107,7 @@ font-size: 1.2rem;
 }
 
 .navListItem:hover, .navListItem:active{
-    border-bottom: 1vw solid rgb(5,6,6);
+    border-bottom: 1vw solid var(--black);
     color: var(--red);
 }
 
@@ -224,6 +225,47 @@ grid-template-rows: repeat(3,auto);
 
 }
 
+#projectsDiv{
+    flex-direction: column;
+    margin-bottom: 5vw;
+}
+
+#projectHead{
+    width: 100vw;
+}
+
+.projectItm{
+    flex-basis: 30vw;
+    background-color: var(--white);
+    border: 0.2vw solid var(--black);
+    box-shadow: 1vw 1vw 1vw var(--black);
+    margin: 1vh;
+
+}
+
+.prodHead, .repoLink{
+    text-align: center;
+    font-size: 1.5rem;
+   
+}
+
+.projectImg{
+    width: 80vw;
+    margin-left: 10%;
+    aspect-ratio: 1/1;
+
+}
+
+.repoLink{
+    display: block;
+    text-align: center;
+    color: var(--red);
+}
+
+.repoLink:visited{
+    color:var(--dark)
+}
+
 .eduItm, .otherItm{
     color: var(--white);
     max-width: 80vw;
@@ -310,6 +352,32 @@ h1{
     width: 15vw;
     height: 15vw;
 
+}
+
+#projectsDiv{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2vw;
+
+
+    
+}
+
+.projectItm{
+    width: 30vw;
+    background-color: var(--white);
+    border: 0.2vw solid var(--black);
+    box-shadow: 1vw 1vw 1vw var(--black);
+    margin-bottom: 1vh;
+    
+}
+
+.projectImg{
+    width: 30vw;
+    margin-left: 0%;
 }
 
 .eduItm>h3, .otherItm>h3{
